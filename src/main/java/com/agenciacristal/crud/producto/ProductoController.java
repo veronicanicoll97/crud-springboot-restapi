@@ -1,5 +1,6 @@
 package com.agenciacristal.crud.producto;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +9,7 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 
+@Tag(name = "Productos", description = "Recursos API sobre productos.")
 @RestController
 @RequestMapping(path = "api/v1/productos")
 public class ProductoController {
